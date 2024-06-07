@@ -8,7 +8,6 @@ public class ConjonctionDonc extends Conjonction{
     public boolean evaluer() {
         boolean valeurAffirmation1 = affirmation1.evaluer();
         boolean valeurAffirmation2 = affirmation2.evaluer();
-
         if (valeurAffirmation1 && !valeurAffirmation2) {
             return false;
         } else {

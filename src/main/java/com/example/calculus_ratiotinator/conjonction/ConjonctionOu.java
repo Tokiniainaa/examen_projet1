@@ -7,7 +7,6 @@ public class ConjonctionOu extends Conjonction  {
     public ConjonctionOu(InterfaceAffirmation affirmation1, InterfaceAffirmation affirmation2) {
         super(affirmation1, affirmation2);
     }
-
     @Override
     public boolean evaluer() {
         return affirmation1.evaluer() || affirmation2.evaluer();
