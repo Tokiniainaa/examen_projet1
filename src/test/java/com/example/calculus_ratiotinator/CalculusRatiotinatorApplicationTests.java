@@ -3,8 +3,7 @@ package com.example.calculus_ratiotinator;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class CalculusRatiotinatorApplicationTests {
@@ -18,6 +17,11 @@ class CalculusRatiotinatorApplicationTests {
     public void testMensonge() {
         InterfaceAffirmation affirmation = new Mensonge();
         assertFalse(affirmation.evaluer());
+    }
+    @Test
+    public void testAffirmation() {
+        InterfaceAffirmation affirmation = new Affirmation(true);
+        assertTrue(affirmation.evaluer());
     }
 
 }
