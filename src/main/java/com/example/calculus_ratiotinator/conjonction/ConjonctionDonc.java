@@ -9,10 +9,10 @@ public class ConjonctionDonc extends Conjonction{
         boolean valeurAffirmation1 = affirmation1.evaluer();
         boolean valeurAffirmation2 = affirmation2.evaluer();
 
-        if (valeurAffirmation1==true && valeurAffirmation2==false) {
+        if (valeurAffirmation1 && !valeurAffirmation2) {
             return false;
         } else {
-            return !valeurAffirmation2;
+            return true;
         }
     }
 }
