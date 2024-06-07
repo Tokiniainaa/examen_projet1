@@ -1,6 +1,6 @@
 package com.example.calculus_ratiotinator;
 
-public interface IntrefaceAffirmation {
+public interface InterfaceAffirmation {
     boolean evaluer();
 
 }
